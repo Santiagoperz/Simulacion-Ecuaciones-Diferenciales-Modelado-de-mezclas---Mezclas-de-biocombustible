@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulación de producción de Biocombustible</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <h1>Simulación de producción de Biocombustible</h1>
+
+  <div id="contenedor">
+    <canvas id="reactor" width="400" height="300"></canvas>
+
+    <div>
+      <p><b>Tiempo de reacción (0-24 h):</b></p>
+      <input type="range" id="tiempo" min="0" max="100" value="0">
+      <br>
+      <button id="btnPlay">▶ Iniciar</button>
+    </div>
+
+    <p id="info"></p>
+    <p id="volumenes"></p>
+  </div>
+
+  <script src="simulacion.js"></script>
+</body>
+</html>
